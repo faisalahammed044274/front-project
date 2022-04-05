@@ -38,6 +38,10 @@ p {
 .pb-title {
   padding-bottom: 50px;
 }
+
+.mt-section {
+  margin-top: 70px;
+}
 .section-title {
   font-weight: bold;
   font-size: 52px;
@@ -175,7 +179,7 @@ p {
   content: "";
   position: absolute;
   background-color: #e4f5fe;
-  height: 130%;
+  height: 120%;
   width: 360px;
   top: -15%;
   border-radius: 50px;
@@ -183,7 +187,8 @@ p {
 }
 
 .author img {
-  margin-left: 90px;
+  width: 100%;
+  margin-left: 50px;
   border: 10px solid #fff;
   border-radius: 50px;
 }
@@ -246,7 +251,7 @@ p {
 }
 
 .test-img::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 53px;
   height: 53px;
@@ -257,11 +262,11 @@ p {
 }
 
 .single-test {
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 9px 18px -2px rgba(190, 233, 255, 0.29);
   border-radius: 13px;
   border: 1px solid transparent;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .single-test .meta h5 {
@@ -305,25 +310,177 @@ p {
 }
 
 .single-test-wrapper:nth-child(n) .single-test {
-  border: 1px solid #F2B4B7
+  border: 1px solid #f2b4b7;
 }
 
 .single-test-wrapper:nth-child(n) .test-img::after {
-  border-color: #F2B4B7
+  border-color: #f2b4b7;
 }
 
 .single-test-wrapper:nth-child(2n) .single-test {
-  border: 1px solid #BDB6FD
+  border: 1px solid #bdb6fd;
 }
 
 .single-test-wrapper:nth-child(2n) .test-img::after {
-  border-color: #BDB6FD
+  border-color: #bdb6fd;
 }
 
 .single-test-wrapper:nth-child(3n) .single-test {
-  border: 1px solid #F9CF80
+  border: 1px solid #f9cf80;
 }
 
 .single-test-wrapper:nth-child(3n) .test-img::after {
-  border-color: #F9CF80
+  border-color: #f9cf80;
+}
+
+/* Pricing Area */
+
+.package {
+  border-radius: 38px;
+}
+
+.pricing-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 4rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.pricing-card:hover {
+  transform: translateY(-15px);
+}
+
+.pricing-icon {
+  margin: 50px 0;
+}
+
+.pricing-icon i {
+  font-size: 40px;
+  position: relative;
+}
+
+.pricing-icon i::before {
+  z-index: 99;
+  position: relative;
+}
+
+.pricing-icon i::after {
+  content: "";
+  position: absolute;
+  height: 95px;
+  width: 95px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  border: 3px solid;
+  left: -58%;
+  top: -76%;
+  z-index: 0;
+}
+
+.pricing-card-container:nth-child(1) .pricing-icon i::before {
+  color: #bdb6fd;
+}
+
+.pricing-card-container:nth-child(1) .pricing-icon i::after {
+  border-color: #bdb6fd;
+}
+.pricing-card-container:nth-child(2) .pricing-icon i::before {
+  color: #f2b4b7;
+}
+
+.pricing-card-container:nth-child(2) .pricing-icon i::after {
+  border-color: #f2b4b7;
+}
+.pricing-card-container:nth-child(3) .pricing-icon i::before {
+  color: #f9cf80;
+}
+
+.pricing-card-container:nth-child(3) .pricing-icon i::after {
+  border-color: #f9cf80;
+}
+
+.pricing-plan{
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--primary-color);
+  margin: 60px 0;
+}
+
+.pricing{
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 64px;
+}
+
+.pricing span{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.pricing-list{
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 40px;
+}
+
+.pricing-list li{
+  padding: 14px 0;
+
+}
+
+.pricing-list li:not(:last-child){
+  border-bottom: 1px dashed #637b92;
+}
+
+/* CTA Area */
+a.btn-solid{
+  background-color: var(--primary-color);
+  padding: 13px 52px;
+  border-radius: 7px;
+  color: #fff;
+  border: 2px solid transparent;
+}
+
+a.btn-solid:hover{
+border-color: var(--primary-color);
+color: var(--primary-color);
+background:transparent;
+}
+
+/*Footer Area */
+
+.footer{
+    background:var(--primary-color);
+    text-align:center;
+}
+
+.footer-menu{
+  list-style-type: none;
+  padding:0;
+}
+
+.footer-menu li{
+    display:inline-block;
+    position:relative;
+    padding:7px;
+}
+
+.footer-menu li:not(:last-child)::after{
+  content:"/";
+  position:absolute;
+  color: #fff;
+  right: -5px;
+}
+
+.footer-menu li a{
+    text-decoration:none;
+    color: #C6C6C6;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:0.05em;
+}
+
+.hr{
+
+margin: 0;
 }
